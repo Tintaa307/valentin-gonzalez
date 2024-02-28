@@ -1,0 +1,49 @@
+---
+import "@fontsource-variable/rubik"
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .active {
+    transform: translateX(0);
+    transition: all 0.7s ease;
+  }
+
+  .height {
+    height: calc(100dvh - 72px);
+  }
+
+  body {
+    background-color: #040404;
+    font-family: "Rubik", sans-serif;
+  }
+</style>

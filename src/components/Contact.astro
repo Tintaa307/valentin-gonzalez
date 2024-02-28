@@ -1,0 +1,38 @@
+---
+import Social from "./Social.astro"
+
+const socialArr = [
+  {
+    name: "Github",
+    link: "https://github.com/Tintaa307",
+  },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/valentin-gonzalez-6a1805276/",
+  },
+  {
+    name: "Envelope",
+    link: "",
+  },
+]
+---
+
+<section id="Contact" class="w-full h-max flex items-center justify-center">
+  <div class="w-[80%] h-max flex items-center justify-center flex-col gap-12">
+    <div
+      class="w-full h-max flex items-center justify-center flex-row gap-12 mt-24"
+    >
+      {
+        socialArr.map((social) => (
+          <Social name={social.name} link={social.link} />
+        ))
+      }
+    </div>
+    <small class="text-sm text-white/70 mb-3 font-extralight"
+      >Developed by <span class="bg-clip-text text-transparent bg-text-gradient"
+        >Tintaa</span
+      >
+      with 💖
+    </small>
+  </div>
+</section>

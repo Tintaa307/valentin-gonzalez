@@ -1,0 +1,66 @@
+---
+import GithubIcon from "./icons/GithubIcon.astro"
+import NextjsIcon from "./icons/NextjsIcon.astro"
+import TypescriptIcon from "./icons/TypescriptIcon.astro"
+import TailwindIcon from "./icons/TailwindIcon.astro"
+import DatabaseIcon from "./icons/DatabaseIcon.astro"
+import PlanetScale from "./icons/PlanetScale.astro"
+import PrismaIcon from "./icons/PrismaIcon.astro"
+
+type CardProps = {
+  title: string
+  description: string
+  tags: [
+    {
+      name: string
+    },
+  ]
+  image: string
+  github: string
+}
+
+const { description, github, image, tags, title } = Astro.props as CardProps
+---
+
+<article
+  class="relative w-2/3 h-[540px] rounded-md bg-[#070707] border-[1px] border-white/20 flex items-center justify-start flex-col gap-4 xxl:w-4/5 ms:xxl:w-2/3 xs:ms:xxl:w-[80%]"
+>
+  <img
+    src={`/${image}`}
+    alt={image}
+    class="min-h-[238px] border-b-[1px] border-white/20 w-full rounded-md"
+  />
+  <div class="w-[90%] h-max flex items-start justify-center flex-col gap-3">
+    <h4 class="text-white/90 text-lg font-normal md:text-base">
+      <span class="text-primary">{title}</span>
+    </h4>
+    <p class="text-white/60 text-sm font-light md:text-[11px]">
+      {description}
+    </p>
+    <ul class="grid grid-cols-2 gap-3 mt-5 md:gap-2">
+      {
+        tags.map((tag) => (
+          <li class="text-white/70 text-xs px-3 py-1 bg-[#090909] border-[1px] border-white/20 rounded-full flex flex-row items-center justify-center gap-1 hover:text-white transition-colors duration-200 select-none md:px-2 md:text-[10px]">
+            {tag.name} {tag.name === "Next.js" && <NextjsIcon />}{" "}
+            {tag.name === "Typescript" && <TypescriptIcon />}{" "}
+            {tag.name === "Tailwindcss" && <TailwindIcon />}
+            {tag.name === "Redis" && <DatabaseIcon />}
+            {tag.name === "PlanetScale" && <PlanetScale />}
+            {tag.name === "Prisma" && <PrismaIcon />}
+          </li>
+        ))
+      }
+    </ul>
+    <footer
+      class="absolute bottom-0 w-[90%] h-max flex items-center justify-end"
+    >
+      <div
+        class="my-2 bg-[#090909] px-2 py-2 rounded-full border-[1px] border-white/20"
+      >
+        <a href={github}>
+          <GithubIcon />
+        </a>
+      </div>
+    </footer>
+  </div>
+</article>

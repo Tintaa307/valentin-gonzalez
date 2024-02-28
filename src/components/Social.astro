@@ -1,0 +1,17 @@
+---
+import GithubIcon from "./icons/GithubIcon.astro"
+import LinkedinIcon from "./icons/LinkedinIcon.astro"
+import EnvelopeIcon from "./icons/EnvelopeIcon.astro"
+
+const { name, link } = Astro.props
+---
+
+<a href={link}>
+  <div
+    class="w-20 h-20 flex items-center justify-center bg-[#080808] border-[1px] border-white/30 rounded-full group cursor-pointer"
+  >
+    {name === "Github" && <GithubIcon />}
+    {name === "Linkedin" && <LinkedinIcon />}
+    {name === "Envelope" && <EnvelopeIcon />}
+  </div>
+</a>

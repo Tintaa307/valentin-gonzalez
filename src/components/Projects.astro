@@ -1,0 +1,90 @@
+---
+import Card from "./Card.astro"
+
+type Tag = {
+  name: string
+}
+
+const firstCardTags = [
+  {
+    name: "Next.js",
+  },
+  {
+    name: "Typescript",
+  },
+  {
+    name: "Tailwindcss",
+  },
+] as Tag[]
+
+const secondCardTags = [
+  {
+    name: "Next.js",
+  },
+  {
+    name: "Typescript",
+  },
+  {
+    name: "Tailwindcss",
+  },
+  {
+    name: "Redis",
+  },
+] as Tag[]
+
+const ThirdCardTags = [
+  {
+    name: "Next.js",
+  },
+  {
+    name: "Typescript",
+  },
+  {
+    name: "Tailwindcss",
+  },
+  {
+    name: "PlanetScale",
+  },
+  {
+    name: "Prisma",
+  },
+] as Tag[]
+---
+
+<section class="w-full h-max flex items-center justify-center">
+  <div
+    id="Project"
+    class="w-[70%] h-full flex items-start justify-center flex-col gap-8 animate-fade-in-y xxl:w-[95%] ms:items-center"
+  >
+    <div class="w-full h-max flex items-center justify-start ms:justify-center">
+      <h3 class="text-white/80 text-3xl font-medium mt-24">
+        My <span class="text-primary">prominent</span> projects
+      </h3>
+    </div>
+    <div
+      class="w-full h-full flex items-center justify-center flex-row gap-12 xxl:gap-6 ms:flex-col"
+    >
+      <Card
+        title="Asistant chatbot"
+        description="This is a chatbot helper to support or manage your webapps and give a better user experience."
+        image="chatbot-image.jpg"
+        tags={firstCardTags}
+        github="https://github.com/Tintaa307/chatbot"
+      />
+      <Card
+        title="Pillwise realtime chat"
+        description="Application for chatting with your doctor or other individuals."
+        image="pillwise-chat.jpg"
+        tags={secondCardTags}
+        github="https://github.com/Tintaa307/chatbot"
+      />
+      <Card
+        title="Pillwise application"
+        description="Progressive wep app designed to remind its users to take their medications and much more."
+        image="landing-pillwise.jpg"
+        tags={ThirdCardTags}
+        github="https://github.com/Tintaa307/pillwise"
+      />
+    </div>
+  </div>
+</section>

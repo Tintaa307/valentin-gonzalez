@@ -1,0 +1,81 @@
+---
+import EnvelopeIcon from "./icons/EnvelopeIcon.astro"
+import LinkedinIcon from "./icons/LinkedinIcon.astro"
+import BarsIcon from "./icons/BarsIcon.astro"
+---
+
+<main
+  id="Home"
+  class="w-full height mt-[72px] flex items-center justify-center"
+>
+  <div id="btn-nav" class="absolute top-5 left-5 hidden xs:block">
+    <BarsIcon />
+  </div>
+  <div
+    class="w-[70%] h-full flex items-center justify-center flex-row xxl:w-[95%] ls:xxl:w-full"
+  >
+    <section
+      class="w-1/2 h-full flex items-start justify-center flex-col gap-6 animate-fade-in-x xl:w-2/3 ms:w-4/5 ls:ms:xl:w-[90%]"
+    >
+      <picture
+        class="w-full h-max flex items-center justify-start flex-row gap-6"
+      >
+        <img
+          src="/foto-personal-edited.jpeg"
+          alt=""
+          class="w-32 h-32 rounded-full animate-fade-in-x-2"
+        />
+        <div
+          class="w-max h-max px-4 py-2 rounded-full bg-[#080808] border-[1px] border-white/20 animate-shine"
+        >
+          <small class="text-white/80 select-none"
+            >Looking for good opportunities</small
+          >
+        </div>
+      </picture>
+      <h1
+        class="text-white/90 text-[44px] font-medium flex flex-col ls:text-[36px] xs:ls:text-[30px]"
+      >
+        Hi, I'm Valentin Gonzalez
+      </h1>
+      <p
+        class="w-full text-white/80 text-lg font-normal leading-relaxed tracking-wide ls:text-sm xs:ls:text-xs"
+      >
+        Seasoned <span class="text-primary">Full-Stack Developer</span> with a diverse
+        portfolio encompassing numerous projects and <span class="text-primary"
+          >professional engagements</span
+        >. Graduated with honors from ORT Argentina & currently pursuing a
+        degree in <span class="text-primary">Computer Science at UBA</span>.
+      </p>
+      <div class="w-max h-max flex flex-row gap-4">
+        <a href="#Contact">
+          <button
+            class="w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+          >
+            Contact me
+            <EnvelopeIcon />
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/valentin-gonzalez-6a1805276/">
+          <button
+            class="w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+          >
+            Linkedin
+            <LinkedinIcon />
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="w-1/2 h-full flex items-center justify-end xl:hidden">
+    </section>
+  </div>
+</main>
+
+<script>
+  const btnNav = document.getElementById("btn-nav")!
+  const nav = document.getElementById("nav")!
+
+  btnNav.addEventListener("click", () => {
+    nav.classList.add("active")
+  })
+</script>
