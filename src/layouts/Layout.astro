@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/rubik"
+import Toast from "../components/Toast.astro"
 
 interface Props {
   title: string
@@ -19,6 +20,7 @@ const { title } = Astro.props
     <title>{title}</title>
   </head>
   <body>
+    <Toast />
     <slot />
   </body>
 </html>
@@ -36,6 +38,17 @@ const { title } = Astro.props
   .active {
     transform: translateX(0);
     transition: all 0.7s ease;
+  }
+
+  .appear {
+    top: 128px;
+    opacity: 1;
+    transition: all 0.7s ease;
+  }
+
+  .center {
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .height {

@@ -6,7 +6,7 @@ import EnvelopeIcon from "./icons/EnvelopeIcon.astro"
 const { name, link } = Astro.props
 ---
 
-<a href={link}>
+<a id={name} href={link}>
   <div
     class="w-20 h-20 flex items-center justify-center bg-[#080808] border-[1px] border-white/30 rounded-full group cursor-pointer"
   >
@@ -15,3 +15,17 @@ const { name, link } = Astro.props
     {name === "Envelope" && <EnvelopeIcon />}
   </div>
 </a>
+
+<script>
+  const envelope = document.getElementById("Envelope")!
+  const toast = document.getElementById("toast")!
+
+  envelope.addEventListener("click", () => {
+    // copy to the clipboard
+    navigator.clipboard.writeText("valentinta@icloud.com")
+    toast.classList.add("appear")
+    setTimeout(() => {
+      toast.classList.remove("appear")
+    }, 3000)
+  })
+</script>
