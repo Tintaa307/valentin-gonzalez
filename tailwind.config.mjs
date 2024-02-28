@@ -46,6 +46,18 @@ export default {
           },
         },
 
+        shine2: {
+          "0%": {
+            filter: "drop-shadow(0 4px 0px #FAD984);",
+          },
+          "50%": {
+            filter: "drop-shadow(0 4px 5px #FAD984);",
+          },
+          "100%": {
+            filter: "drop-shadow(0 0px 0px #FAD984);",
+          },
+        },
+
         "fade-in-x": {
           "0%": {
             opacity: "0",
