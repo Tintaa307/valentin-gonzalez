@@ -47,9 +47,8 @@ const navItems = [
             <div class="xs:w-full xs:h-max xs:flex xs:flex-col xs:gap-2">
               <li class="mx-3">
                 <a
-                  id="navLink"
                   href={item.href}
-                  class="text-white/80 text-lg font-medium cursor-pointer hover:text-primary transition-colors duration-150 ms:text-base sm:ms:text-sm"
+                  class="text-white/80 text-lg font-medium cursor-pointer hover:text-primary transition-colors duration-150 ms:text-base sm:ms:text-sm navlink"
                 >
                   {item.title}
                 </a>
@@ -71,13 +70,17 @@ const navItems = [
 <script>
   const closeNav = document.getElementById("closeNav")!
   const nav = document.getElementById("nav")!
-  const navLink = document.getElementById("navLink")!
+  const navLinks = document.getElementsByClassName(
+    "navlink"
+  )! as HTMLCollectionOf<HTMLElement>
 
   closeNav.addEventListener("click", () => {
     nav.classList.remove("active")
   })
 
-  navLink.addEventListener("click", () => {
-    nav.classList.remove("active")
-  })
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", () => {
+      nav.classList.remove("active")
+    })
+  }
 </script>
