@@ -37,31 +37,30 @@ const navItems = [
       </a>
     </div>
     <div
-      class="w-2/4 h-full flex items-center justify-center xs:h-max xs:w-full xs:justify-start xs:items-start sm:w-3/4"
+      class="w-2/4 h-full flex items-center justify-center xs:h-max xs:w-full xs:justify-center xs:items-center sm:w-3/4"
     >
       <ul
-        class="flex flex-row gap-16 xs:flex-col xs:items-start xs:mt-24 xs:gap-12 xs:w-full sm:gap-8"
+        class="flex flex-row gap-16 xs:flex-col xs:items-center xs:mt-24 xs:gap-12 xs:w-full sm:gap-8"
       >
         {
           navItems.map((item) => (
             <div class="xs:w-full xs:h-max xs:flex xs:flex-col xs:gap-2">
               <li class="mx-3">
                 <a
+                  id="navLink"
                   href={item.href}
                   class="text-white/80 text-lg font-medium cursor-pointer hover:text-primary transition-colors duration-150 ms:text-base sm:ms:text-sm"
                 >
                   {item.title}
                 </a>
               </li>
-              <div class="w-[60%] h-[1px] bg-white/20 hidden xs:block" />
+              <div class="w-full h-[1px] bg-white/20 hidden xs:block" />
             </div>
           ))
         }
       </ul>
     </div>
-    <div
-      class="w-1/4 flex items-center justify-end flex-row gap-10 xs:w-full xs:justify-start xs:mt-6"
-    >
+    <div class="w-1/4 flex items-center justify-end flex-row gap-10 xs:hidden">
       <a target="_blank" href="https://github.com/Tintaa307" class="xs:ml-3">
         <GithubIcon />
       </a>
@@ -72,8 +71,13 @@ const navItems = [
 <script>
   const closeNav = document.getElementById("closeNav")!
   const nav = document.getElementById("nav")!
+  const navLink = document.getElementById("navLink")!
 
   closeNav.addEventListener("click", () => {
+    nav.classList.remove("active")
+  })
+
+  navLink.addEventListener("click", () => {
     nav.classList.remove("active")
   })
 </script>
