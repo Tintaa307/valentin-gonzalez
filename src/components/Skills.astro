@@ -1,5 +1,6 @@
 ---
 import FolderIcon from "./icons/FolderIcon.astro"
+import Title from "./skills-components/Title.astro"
 import NextjsIcon from "./icons/NextjsIcon.astro"
 import AstroIcon from "./icons/AstroIcon.astro"
 import ViteIcon from "./icons/ViteIcon.astro"
@@ -15,7 +16,6 @@ import ZodIcon from "./icons/ZodIcon.astro"
 import TurboIcon from "./icons/TurboIcon.astro"
 import ThreejsIcon from "./icons/ThreejsIcon.astro"
 import KeyIcon from "./icons/KeyIcon.astro"
-import FolderDevIcon from "./icons/FolderDevIcon.astro"
 import ExpressIcon from "./icons/ExpressIcon.astro"
 import NestjsIcon from "./icons/NestjsIcon.astro"
 import FastApiIcon from "./icons/FastApiIcon.astro"
@@ -44,25 +44,14 @@ import UpstashIcon from "./icons/UpstashIcon.astro"
       class="w-full h-max flex items-start justify-start flex-row ms:justify-center ms:items-center sm:flex-col sm:gap-12 xs:ms:items-start"
     >
       <div class="w-1/2 h-max flex items-start justify-center flex-col gap-1">
-        <h4
-          class="text-white/80 text-lg flex items-center justify-center flex-row gap-2"
-        >
-          <FolderDevIcon />
-          Frontend
-        </h4>
+        <Title title="Frontend" />
         <span
           class="w-[1.5px] h-max bg-white/30 flex justify-start flex-col gap-8"
         >
           <div
             class="relative w-max h-max flex items-center justify-center flex-col gap-1 mt-4"
           >
-            <h4
-              class="text-white/80 text-lg flex items-center justify-center flex-row gap-2 ml-3"
-            >
-              <span class="w-[10px] h-[1px] bg-white/30"></span>
-              <FolderIcon />
-              Frameworks
-            </h4>
+            <Title title="Frameworks" className="ml-2" span={true} />
             <span
               class="w-[1px] h-[200px] bg-white/30 flex justify-start flex-col gap-8"
             >
@@ -123,13 +112,7 @@ import UpstashIcon from "./icons/UpstashIcon.astro"
           <div
             class="relative w-max h-max flex items-center justify-center flex-col gap-1"
           >
-            <h4
-              class="text-white/80 text-lg flex items-center justify-center flex-row gap-2 ml-3"
-            >
-              <span class="w-[10px] h-[1px] bg-white/30"></span>
-              <FolderIcon />
-              Languages
-            </h4>
+            <Title title="Languages" className="ml-2" span={true} />
             <span
               class="w-[1px] h-[150px] bg-white/30 flex justify-start flex-col gap-8"
             >
@@ -184,13 +167,7 @@ import UpstashIcon from "./icons/UpstashIcon.astro"
           <div
             class="relative w-max h-max flex items-center justify-center flex-col gap-1"
           >
-            <h4
-              class="text-white/80 text-lg flex items-center justify-center flex-row gap-2 ml-3"
-            >
-              <span class="w-[10px] h-[1px] bg-white/30"></span>
-              <FolderIcon />
-              Libraries
-            </h4>
+            <Title title="Libraries" className="ml-2" span={true} />
             <span
               class="w-[1px] h-[320px] bg-white/30 flex justify-start flex-col gap-8"
             >
@@ -284,25 +261,14 @@ import UpstashIcon from "./icons/UpstashIcon.astro"
       <div
         class="w-1/2 h-max flex items-center justify-center flex-col gap-1 lg:items-start lg:ml-24 sm:lg:ml-0"
       >
-        <h4
-          class="text-white/80 text-lg flex items-center justify-center flex-row gap-2"
-        >
-          <FolderDevIcon />
-          Backend
-        </h4>
+        <Title title="Backend" />
         <span
           class="w-[1px] h-max bg-white/30 flex justify-start flex-col gap-8"
         >
           <div
             class="relative w-max h-max flex items-center justify-center flex-col gap-1 mt-4"
           >
-            <h4
-              class="text-white/80 text-lg flex items-center justify-center flex-row gap-2 ml-3"
-            >
-              <span class="w-[10px] h-[1px] bg-white/30"></span>
-              <FolderIcon />
-              Frameworks
-            </h4>
+            <Title title="Frameworks" className="ml-3" span={true} />
             <span
               class="w-[1px] h-[150px] bg-white/30 flex justify-start flex-col gap-8"
             >
@@ -350,13 +316,7 @@ import UpstashIcon from "./icons/UpstashIcon.astro"
           <div
             class="relative w-max h-max flex items-center justify-center flex-col gap-1"
           >
-            <h4
-              class="text-white/80 text-lg flex items-center justify-center flex-row gap-2 ml-3"
-            >
-              <span class="w-[10px] h-[1px] bg-white/30"></span>
-              <FolderIcon />
-              Languages
-            </h4>
+            <Title title="Languages" className="ml-3" span={true} />
             <span
               class="w-[1px] h-[150px] bg-white/30 flex justify-start flex-col gap-8"
             >
@@ -409,13 +369,7 @@ import UpstashIcon from "./icons/UpstashIcon.astro"
           <div
             class="relative w-max h-max flex items-center justify-center flex-col gap-1"
           >
-            <h4
-              class="text-white/80 text-lg flex items-center justify-center flex-row gap-2 ml-3"
-            >
-              <span class="w-[10px] h-[1px] bg-white/30"></span>
-              <FolderIcon />
-              Libraries
-            </h4>
+            <Title title="Libraries" className="ml-3" span={true} />
             <span
               class="w-[1px] h-[150px] bg-white/30 flex justify-start flex-col gap-8"
             >
@@ -466,13 +420,7 @@ import UpstashIcon from "./icons/UpstashIcon.astro"
           <div
             class="relative w-max h-max flex items-center justify-center flex-col gap-1"
           >
-            <h4
-              class="text-white/80 text-lg flex items-center justify-center flex-row gap-2 ml-3"
-            >
-              <span class="w-[10px] h-[1px] bg-white/30"></span>
-              <FolderIcon />
-              Databases
-            </h4>
+            <Title title="Databases" className="ml-3" span={true} />
             <span
               class="w-[1px] h-[155px] bg-white/30 flex justify-start flex-col gap-8"
             >

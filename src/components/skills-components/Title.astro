@@ -1,0 +1,22 @@
+---
+import FolderDevIcon from "../icons/FolderDevIcon.astro"
+
+type TitleProps = {
+  title: string
+  className?: string
+  span?: boolean
+}
+
+const { title, className, span } = Astro.props as TitleProps
+---
+
+<h4
+  class={[
+    "text-white/80 text-lg flex items-center justify-center flex-row gap-2",
+    className,
+  ].join(" ")}
+>
+  {span ? <span class="w-[10px] h-[1px] bg-white/30" /> : null}
+  <FolderDevIcon />
+  {title}
+</h4>
