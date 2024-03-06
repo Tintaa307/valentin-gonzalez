@@ -68,12 +68,12 @@ const socialMedia = [
               design, and digital branding strategies.
             </p>
             <ul
-              class="w-full h-max flex items-start justify-start flex-row my-5 gap-4 sm:mt-3 ls:mt-1"
+              class="w-full h-max flex items-start justify-start flex-row my-5 gap-4 sm:mt-3 ls:mt-1 ls:mb-2"
             >
               {
                 socialMedia.map((social) => (
                   <a target="_blank" href={social.url}>
-                    <li class="w-10 h-10 flex items-center justify-center rounded-full bg-[#090909] border-[1px] border-white/20 group ls:mb-2">
+                    <li class="w-10 h-10 flex items-center justify-center rounded-full bg-[#090909] border-[1px] border-white/20 group ls:mb-3">
                       {social.name === "GitHub" ? (
                         <GithubIcon />
                       ) : (
