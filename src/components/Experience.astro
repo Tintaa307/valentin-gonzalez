@@ -1,6 +1,7 @@
 ---
 import GithubIcon from "./icons/GithubIcon.astro"
 import LinkedinIcon from "./icons/LinkedinIcon.astro"
+import EarthIcon from "./icons/EarthIcon.astro"
 
 const socialMedia = [
   {
@@ -10,6 +11,10 @@ const socialMedia = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A101669482&keywords=synera&origin=RICH_QUERY_SUGGESTION&position=0&searchId=e77563a9-4645-4bbe-ad6e-cba5f98a74c6&sid=i2%3B&spellCorrectionEnabled=false",
+  },
+  {
+    name: "Website",
+    url: "https://synera.vercel.app/",
   },
 ]
 ---
@@ -74,11 +79,9 @@ const socialMedia = [
                 socialMedia.map((social) => (
                   <a target="_blank" href={social.url}>
                     <li class="w-10 h-10 flex items-center justify-center rounded-full bg-[#090909] border-[1px] border-white/20 group ls:mb-3">
-                      {social.name === "GitHub" ? (
-                        <GithubIcon />
-                      ) : (
-                        <LinkedinIcon />
-                      )}
+                      {social.name === "GitHub" && <GithubIcon />}
+                      {social.name === "LinkedIn" && <LinkedinIcon />}
+                      {social.name === "Website" && <EarthIcon />}
                     </li>
                   </a>
                 ))
