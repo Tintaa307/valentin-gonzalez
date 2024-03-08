@@ -4,11 +4,15 @@ import CloseIcon from "./icons/CloseIcon.astro"
 
 const navItems = [
   {
+    title: "Experience",
+    href: "#Experience",
+  },
+  {
     title: "Projects",
     href: "#Project",
   },
   {
-    title: "Tools & Skills",
+    title: "Stack",
     href: "#Skills",
   },
   {
@@ -20,31 +24,31 @@ const navItems = [
 
 <header
   id="nav"
-  class="fixed top-0 left-0 z-50 w-full h-[72px] flex items-center justify-center backdrop-blur-sm border-b-[1px] border-white/20 xs:h-[100dvh] xs:w-[85%] xs:backdrop-blur-none xs:bg-[#070707] xs:border-r-[1px] xs:border-r-white/20 xs:items-start xs:justify-start xs:-translate-x-full transition-all duration-700"
+  class="fixed top-0 left-0 z-50 w-full h-[72px] flex items-center justify-center backdrop-blur-sm border-b-[1px] border-white/20 ls:h-[100dvh] ls:w-[85%] ls:backdrop-blur-none ls:bg-[#070707] ls:border-r-[1px] ls:border-r-white/20 ls:items-start ls:justify-start ls:-translate-x-full transition-all duration-700"
 >
   <nav
-    class="relative w-[70%] h-full flex items-center justify-evenly flex-row xxl:w-[95%] xs:w-full xs:flex-col xs:justify-start xs:items-start"
+    class="relative w-[70%] h-full flex items-center justify-evenly flex-row xxl:w-[95%] ls:w-full ls:flex-col ls:justify-start ls:items-start"
   >
-    <div id="closeNav" class="absolute right-0 top-3 hidden xs:block">
+    <div id="closeNav" class="absolute right-0 top-3 hidden ls:block">
       <CloseIcon />
     </div>
-    <div class="w-1/4 h-full flex items-center justify-start xs:w-max xs:h-max">
+    <div class="w-1/4 h-full flex items-center justify-start ls:w-max ls:h-max">
       <a
         href="#Home"
-        class="bg-clip-text text-transparent bg-text-gradient text-xl font-semibold cursor-pointer select-none ms:text-base xs:absolute xs:top-3 xs:left-3"
+        class="bg-clip-text text-transparent bg-text-gradient text-xl font-semibold cursor-pointer select-none ms:text-base ls:absolute ls:top-3 ls:left-8"
       >
         Tintaa
       </a>
     </div>
     <div
-      class="w-2/4 h-full flex items-center justify-center xs:h-max xs:w-full xs:justify-center xs:items-center sm:w-3/4"
+      class="w-2/4 h-full flex items-center justify-center ls:h-max ls:w-full ls:justify-center ls:items-center sm:w-3/4"
     >
       <ul
-        class="flex flex-row gap-16 xs:flex-col xs:items-center xs:mt-24 xs:gap-12 xs:w-full sm:gap-8"
+        class="flex flex-row gap-16 ls:flex-col ls:items-center ls:mt-24 ls:gap-12 ls:w-[90%] sm:gap-8"
       >
         {
           navItems.map((item) => (
-            <div class="xs:w-full xs:h-max xs:flex xs:flex-col xs:gap-2">
+            <div class="ls:w-full ls:h-max ls:flex ls:flex-col ls:gap-2">
               <li class="mx-3">
                 <a
                   href={item.href}
@@ -53,14 +57,14 @@ const navItems = [
                   {item.title}
                 </a>
               </li>
-              <div class="w-full h-[1px] bg-white/20 hidden xs:block" />
+              <div class="w-full h-[1px] bg-white/20 hidden ls:block" />
             </div>
           ))
         }
       </ul>
     </div>
-    <div class="w-1/4 flex items-center justify-end flex-row gap-10 xs:hidden">
-      <a target="_blank" href="https://github.com/Tintaa307" class="xs:ml-3">
+    <div class="w-1/4 flex items-center justify-end flex-row gap-10 ls:hidden">
+      <a target="_blank" href="https://github.com/Tintaa307" class="ls:ml-3">
         <GithubIcon />
       </a>
     </div>
