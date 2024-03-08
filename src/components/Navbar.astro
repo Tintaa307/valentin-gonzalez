@@ -27,15 +27,17 @@ const navItems = [
   class="fixed top-0 left-0 z-50 w-full h-[72px] flex items-center justify-center backdrop-blur-sm border-b-[1px] border-white/20 ls:h-[100dvh] ls:w-[85%] ls:backdrop-blur-none ls:bg-[#070707] ls:border-r-[1px] ls:border-r-white/20 ls:items-start ls:justify-start ls:-translate-x-full transition-all duration-700"
 >
   <nav
-    class="relative w-[70%] h-full flex items-center justify-evenly flex-row xxl:w-[95%] ls:w-full ls:flex-col ls:justify-start ls:items-start"
+    class="relative w-[70%] h-full flex items-center justify-evenly flex-row xxl:w-[95%] ls:w-full ls:flex-col ls:justify-start ls:items-center"
   >
     <div id="closeNav" class="absolute right-0 top-3 hidden ls:block">
       <CloseIcon />
     </div>
-    <div class="w-1/4 h-full flex items-center justify-start ls:w-max ls:h-max">
+    <div
+      class="w-1/4 h-full flex items-center justify-start ls:w-[90%] ls:h-max ls:items-center"
+    >
       <a
         href="#Home"
-        class="bg-clip-text text-transparent bg-text-gradient text-xl font-semibold cursor-pointer select-none ms:text-base ls:absolute ls:top-3 ls:left-8"
+        class="bg-clip-text text-transparent bg-text-gradient text-xl font-semibold cursor-pointer select-none ms:text-base mt-4"
       >
         Tintaa
       </a>
@@ -52,12 +54,12 @@ const navItems = [
               <li class="mx-3">
                 <a
                   href={item.href}
-                  class="text-white/80 text-lg font-medium cursor-pointer hover:text-primary transition-colors duration-150 ms:text-base sm:ms:text-sm navlink"
+                  class="text-white/80 text-lg font-medium cursor-pointer hover:text-primary transition-colors duration-150 ms:text-base sm:ms:text-sm navlink ls:sm:ms:text:lg ls:sm:ms:text-white"
                 >
                   {item.title}
                 </a>
               </li>
-              <div class="w-full h-[1px] bg-white/20 hidden ls:block" />
+              <div class="w-full h-[1px] bg-white/40 hidden ls:block" />
             </div>
           ))
         }
