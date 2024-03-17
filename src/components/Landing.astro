@@ -3,6 +3,7 @@ import EnvelopeIcon from "./icons/EnvelopeIcon.astro"
 import LinkedinIcon from "./icons/LinkedinIcon.astro"
 import BarsIcon from "./icons/BarsIcon.astro"
 import CodeIcon from "./icons/CodeIcon.astro"
+import FileIcon from "./icons/FileIcon.astro"
 ---
 
 <main
@@ -53,21 +54,36 @@ import CodeIcon from "./icons/CodeIcon.astro"
           >Computer Science at Universidad de Buenos Aires</span
         >.
       </p>
-      <div class="w-max h-max flex flex-row gap-4">
-        <a href="#Contact">
-          <button
-            class="w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+      <div
+        class="w-max h-max flex flex-row gap-4 xs:flex-col xs:gap-6 xs:items-center"
+      >
+        <div class="flex flex-row gap-4">
+          <a href="#Contact">
+            <button
+              class="w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+            >
+              Contact me
+              <EnvelopeIcon />
+            </button>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/valentin-gonzalez-6a1805276/"
           >
-            Contact me
-            <EnvelopeIcon />
-          </button>
-        </a>
-        <a href="https://www.linkedin.com/in/valentin-gonzalez-6a1805276/">
+            <button
+              class="w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+            >
+              Linkedin
+              <LinkedinIcon />
+            </button>
+          </a>
+        </div>
+        <a target="_blank" href="/cv.pdf">
           <button
-            class="w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+            class="w-max h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px] px-2"
           >
-            Linkedin
-            <LinkedinIcon />
+            Download CV
+            <FileIcon />
           </button>
         </a>
       </div>
