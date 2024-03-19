@@ -7,13 +7,13 @@ type Tag = {
 
 const firstCardTags = [
   {
-    name: "Next.js",
+    name: "Next.Js",
   },
   {
-    name: "Typescript",
+    name: "TypeScript",
   },
   {
-    name: "Tailwindcss",
+    name: "TailwindCSS",
   },
   {
     name: "Redis",
@@ -22,13 +22,13 @@ const firstCardTags = [
 
 const secondCardTags = [
   {
-    name: "Next.js",
+    name: "Next.Js",
   },
   {
-    name: "Typescript",
+    name: "TypeScript",
   },
   {
-    name: "Tailwindcss",
+    name: "TailwindCSS",
   },
   {
     name: "Redis",
@@ -37,19 +37,31 @@ const secondCardTags = [
 
 const ThirdCardTags = [
   {
-    name: "Next.js",
+    name: "Next.Js",
   },
   {
-    name: "Typescript",
+    name: "TypeScript",
   },
   {
-    name: "Tailwindcss",
+    name: "TailwindCSS",
   },
   {
     name: "PlanetScale",
   },
   {
     name: "Prisma",
+  },
+] as Tag[]
+
+const FourthCardTags = [
+  {
+    name: "Next.Js",
+  },
+  {
+    name: "TypeScript",
+  },
+  {
+    name: "TailwindCSS",
   },
 ] as Tag[]
 ---
@@ -65,7 +77,7 @@ const ThirdCardTags = [
       </h3>
     </div>
     <div
-      class="w-full h-full flex items-center justify-center flex-row gap-12 xxl:gap-6 ms:flex-col"
+      class="w-full h-full grid grid-cols-3 place-items-center gap-3 lg:grid-cols-2 sm:lg:grid-cols-1"
     >
       <Card
         title="Asistant chatbot"
@@ -87,6 +99,13 @@ const ThirdCardTags = [
         image="landing-pillwise.jpg"
         tags={ThirdCardTags}
         github="https://github.com/Tintaa307/pillwise"
+      />
+      <Card
+        title="Realtime whiteboard"
+        description="Drawing Online is a real-time collaborative application where users can create diagrams, shapes, and drawings directly in the browser."
+        image="drawing-online-image.png"
+        tags={FourthCardTags}
+        github="https://github.com/Tintaa307/drawing-online"
       />
     </div>
   </div>

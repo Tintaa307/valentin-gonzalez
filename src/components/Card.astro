@@ -23,7 +23,7 @@ const { description, github, image, tags, title } = Astro.props as CardProps
 ---
 
 <article
-  class="relative w-2/3 h-[540px] rounded-md bg-[#070707] border-[1px] border-white/20 flex items-center justify-start flex-col gap-4 xxl:w-4/5 ms:xxl:w-2/3 xs:ms:xxl:w-[80%]"
+  class="relative w-full h-[540px] rounded-md bg-[#070707] border-[1px] border-white/20 flex items-center justify-start flex-col gap-4 sm:w-3/4"
 >
   <img
     src={`/${image}`}
@@ -40,10 +40,11 @@ const { description, github, image, tags, title } = Astro.props as CardProps
     <ul class="grid grid-cols-2 gap-3 mt-5 md:gap-2">
       {
         tags.map((tag) => (
-          <li class="text-white/70 text-xs px-3 py-1 bg-[#090909] border-[1px] border-white/20 rounded-full flex flex-row items-center justify-center gap-1 hover:text-white transition-colors duration-200 select-none md:px-2 md:text-[10px]">
-            {tag.name} {tag.name === "Next.js" && <NextjsIcon />}{" "}
-            {tag.name === "Typescript" && <TypescriptIcon />}{" "}
-            {tag.name === "Tailwindcss" && <TailwindIcon />}
+          <li class="text-white/70 text-xs px-4 py-1 bg-[#090909] border-[1px] border-white/20 rounded-full flex flex-row items-center justify-center gap-1 hover:text-white transition-colors duration-200 select-none md:px-2 md:text-[10px]">
+            {tag.name}
+            {tag.name === "Next.Js" && <NextjsIcon />}{" "}
+            {tag.name === "TypeScript" && <TypescriptIcon />}{" "}
+            {tag.name === "TailwindCSS" && <TailwindIcon />}
             {tag.name === "Redis" && <DatabaseIcon />}
             {tag.name === "PlanetScale" && <PlanetScale />}
             {tag.name === "Prisma" && <PrismaIcon />}
