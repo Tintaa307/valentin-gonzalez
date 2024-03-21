@@ -68,6 +68,6 @@ My first progressive web application for mobile called Pillwise, it aims to serv
 
 This repository is MIT Licesed.
 
-## Explore, Get Inspired, and Connect!
+## 🧘‍♂️ Explore, Get Inspired, and Connect!
 
 Thank you for visiting my portfolio website! Feel free to explore my projects and don't hesitate to reach out if you have any questions or suggestions.
