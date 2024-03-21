@@ -17,7 +17,7 @@ This repository hosts the source code of my personal portfolio website, where I 
 
 ![Logo del Proyecto](public/synera-work-modified.png)
 
-#### Co-founder and lead developer at Synera, a digital agency dedicated to providing high-quality services for project creation, innovation, and scalability. Our expertise extends to cultivating robust client partnerships.
+Co-founder and lead developer at Synera, a digital agency dedicated to providing high-quality services for project creation, innovation, and scalability. Our expertise extends to cultivating robust client partnerships.
 
 ---
 
@@ -25,8 +25,8 @@ This repository hosts the source code of my personal portfolio website, where I 
 
 ![Logo del Proyecto](public/logo-ort.jpeg)
 
-#### Graduated with honors from ORT Argentina, specializing in Information Technology and Communication.
-Degree: Bachelor of Technology and Communication.
+Graduated with honors from ORT Argentina, specializing in Information Technology and Communication.
+#### Degree: Bachelor of Technology and Communication.
 
 ## 🥇 Featured Projects
 
