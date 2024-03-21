@@ -3,7 +3,7 @@ import EnvelopeIcon from "./icons/EnvelopeIcon.astro"
 import LinkedinIcon from "./icons/LinkedinIcon.astro"
 import BarsIcon from "./icons/BarsIcon.astro"
 import CodeIcon from "./icons/CodeIcon.astro"
-import FileIcon from "./icons/FileIcon.astro"
+import PdfIcon from "./icons/PdfIcon.astro"
 ---
 
 <main
@@ -55,7 +55,7 @@ import FileIcon from "./icons/FileIcon.astro"
         >.
       </p>
       <div
-        class="w-max h-max flex flex-row gap-4 xs:flex-col xs:gap-6 xs:items-center"
+        class="w-max h-max flex flex-row gap-4 xs:flex-col xs:gap-6 xs:items-start"
       >
         <div class="flex flex-row gap-4">
           <a href="#Contact">
@@ -78,27 +78,60 @@ import FileIcon from "./icons/FileIcon.astro"
             </button>
           </a>
         </div>
-        <a target="_blank" href="/cv-valentin-gonzalez.pdf">
-          <button
-            class="w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+        <button
+          id="download-cv"
+          class="relative w-40 h-[38px] bg-[#070707] border-[1px] border-white/30 hover:bg-[#090909] hover:text-white transition-colors duration-200 rounded-3xl text-white/80 text-sm flex items-center justify-center flex-row gap-2 group ls:w-36 ls:h-[34px]"
+        >
+          Download CV
+          <PdfIcon />
+          <div
+            id="show-cv"
+            class="absolute top-11 w-24 h-max opacity-0 flex items-center justify-center bg-[#090909] border-[1px] border-white/20 rounded-lg transition-all duration-200"
           >
-            Download CV
-            <FileIcon />
-          </button>
-        </a>
+            <ul
+              class="w-full h-max flex items-center justify-center flex-col px-3 py-3"
+            >
+              <a class="group" href="/cv-spanish.pdf">
+                <li
+                  class="text-white/80 text-sm group group-hover:text-white transition-colors duration-200"
+                >
+                  Spanish
+                </li>
+              </a>
+              <span class="w-[95%] h-[1px] bg-white/20 my-3"></span>
+              <a class="group" href="/cv-english.pdf">
+                <li
+                  class="text-white/80 text-sm group group-hover:text-white transition-colors duration-200"
+                >
+                  English
+                </li>
+              </a>
+            </ul>
+          </div>
+        </button>
       </div>
     </section>
     <section class="w-1/2 h-full flex items-center justify-end xl:hidden">
       <CodeIcon />
     </section>
   </div>
+
+  <script>
+    const btnNav = document.getElementById("btn-nav")!
+    const nav = document.getElementById("nav")!
+    const showCv = document.getElementById("show-cv")!
+    const downloadCv = document.getElementById("download-cv")!
+
+    downloadCv.addEventListener("mouseenter", () => {
+      showCv.style.opacity = "1"
+    })
+
+    downloadCv.addEventListener("mouseleave", () => {
+      showCv.style.opacity = "0"
+    })
+
+    btnNav.addEventListener("click", () => {
+      nav.classList.add("active")
+    })
+  </script>
 </main>
-
-<script>
-  const btnNav = document.getElementById("btn-nav")!
-  const nav = document.getElementById("nav")!
-
-  btnNav.addEventListener("click", () => {
-    nav.classList.add("active")
-  })
-</script>
