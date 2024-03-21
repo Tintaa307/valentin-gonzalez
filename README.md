@@ -15,7 +15,7 @@ This repository hosts the source code of my personal portfolio website, where I 
 
 ### Synera Digital Agency
 
-![Logo del Proyecto](public/synera-work.png)
+![Logo del Proyecto](public/synera-work-modified.png)
 
 Co-founder and lead developer at Synera, a digital agency dedicated to providing high-quality services for project creation, innovation, and scalability. Our expertise extends to cultivating robust client partnerships.
 
