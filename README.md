@@ -17,13 +17,15 @@ This repository hosts the source code of my personal portfolio website, where I 
 
 ![Logo del Proyecto](public/synera-work-modified.png)
 
-Co-founder and lead developer at Synera, a digital agency dedicated to providing high-quality services for project creation, innovation, and scalability. Our expertise extends to cultivating robust client partnerships.
+#### Co-founder and lead developer at Synera, a digital agency dedicated to providing high-quality services for project creation, innovation, and scalability. Our expertise extends to cultivating robust client partnerships.
+
+---
 
 ### ORT Argentina
 
 ![Logo del Proyecto](public/logo-ort.jpeg)
 
-Graduated with honors from ORT Argentina, specializing in Information Technology and Communication.
+#### Graduated with honors from ORT Argentina, specializing in Information Technology and Communication.
 Degree: Bachelor of Technology and Communication.
 
 ## 🥇 Featured Projects
@@ -33,6 +35,8 @@ Degree: Bachelor of Technology and Communication.
 ![Logo del Proyecto](public/drawing-online-landing.png)
 
 Drawing Online is a real-time collaborative application where users can create diagrams, shapes, and drawings directly in the browser. Similar to Excalidraw or Paint, this intuitive and accessible tool fosters creativity and collaboration in visual projects effortlessly.
+
+---
 
 ### Pillwise App
 
