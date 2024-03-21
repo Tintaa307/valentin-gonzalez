@@ -60,6 +60,7 @@ My first progressive web application for mobile called Pillwise, it aims to serv
 
 - Argentina, Buenos Aires
 - valentinta@icloud.com
+- [Linkedin](https://www.linkedin.com/in/valentin-gonzalez-6a1805276/)
 - +5491144489123
 - https://valentin-portfolio.vercel.app
 
