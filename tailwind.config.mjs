@@ -13,6 +13,7 @@ export default {
         "text-gradient": "linear-gradient(to right bottom,#fff 10%, #FAD984);",
       },
       screens: {
+        xxs: { raw: "(max-width: 399px)" },
         xs: { raw: "(max-width: 550px)" },
         ls: { raw: "(max-width: 680px)" },
         sm: { raw: "(max-width: 750px)" },
